@@ -1,0 +1,171 @@
+body {
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #5a3e2b, #3b2618);
+  color: #2b1d12;
+  text-align: center;
+
+  /* Flex centralizador */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;  /* ocupa toda a tela */
+  margin: 0;       /* remove margin padrão do body */
+  padding: 0;      /* remove padding que causa scroll */
+  overflow: hidden; /* evita scroll adicional */
+}
+
+/* Container estilo pergaminho */
+.container {
+  background: #fdf5e6;
+  border-radius: 15px;
+  width: 900px;
+  max-width: 95%;
+  padding: 20px 30px; /* padding menor para caber na tela */
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.2);
+  border: 4px solid #a67c52;
+  background-image: url("https://www.transparenttextures.com/patterns/parchment.png");
+  background-size: cover;
+  position: relative;
+
+  /* Altura máxima sem gerar scroll */
+  height: 90vh; /* ocupa até 90% da altura da tela */
+  overflow-y: auto; /* permite scroll interno só se o conteúdo ultrapassar */
+}
+
+
+/* Título com cara medieval */
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #4b2e19;
+  font-family: "Cinzel", serif;
+  text-shadow: 1px 1px 0 #fff3d6;
+}
+
+/* Palavra oculta */
+.palavra {
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #2b1d12;
+  border-bottom: 2px dashed #a67c52;
+  padding-bottom: 10px;
+}
+
+/* Informações */
+.info, .letras-erradas {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #462a16;
+}
+
+/* Mensagem final */
+.mensagem {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #7a0522;
+  text-shadow: 1px 1px 0 #fff3d6;
+}
+
+/* Botão Reiniciar (efeito madeira) */
+.reiniciar {
+  display: none;
+  margin-top: 23px;
+  background: linear-gradient(145deg, #8b5a2b, #5a3e2b);
+  color: #fdf5e6;
+  border: 2px solid #3b2618;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: 0.1s;
+}
+
+.reiniciar:hover {
+  background: linear-gradient(145deg, #ce9c6b, #75410d);
+  transition: 1s;
+}
+
+/* Teclado com estilo rústico */
+.teclado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.teclado button {
+  width: 57px;
+  height: 57px;
+  font-size: 18px;
+  border: 2px solid #3b2618;
+  background: linear-gradient(145deg, #deb887, #a67c52);
+  color: #2b1d12;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.5),
+              0 4px 6px rgba(0,0,0,0.4);
+  transition: 0.2s;
+}
+
+.teclado button:hover {
+  background: linear-gradient(145deg, #f5deb3, #c49e71);
+}
+
+.teclado button:disabled {
+  background-color: #d2b48c;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Botões corretos e errados */
+.teclado button.correto {
+  background: #4CAF50;
+  color: white;
+  border: 2px solid #2b1d12;
+}
+
+.teclado button.errado {
+  background: #8b0000;
+  color: white;
+  border: 2px solid #2b1d12;
+}
+
+/* Botão Home fixo no canto superior esquerdo */
+/* Botão Home no canto superior esquerdo */
+.btn-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* acima de tudo */
+}
+
+/* Mantém o estilo igual ao botão principal */
+.btn-home {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(145deg, #8b5a2b, #5a3e2b);
+  color: #fdf5e6;
+  border: 2px solid #3b2618;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  background: linear-gradient(145deg, #ce9c6b, #75410d);
+  transform: scale(1.05);
+}

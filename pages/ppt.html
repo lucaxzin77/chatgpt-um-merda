@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel ou Tesoura - Estilo Medieval</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylePpt.css">
+</head>
+<body>
+
+    <!-- Botão Home no canto superior esquerdo -->
+    <a href="../index.html" class="btn-home">🏠 Home</a>
+
+    <div class="container">
+        <h1>Pedra, Papel ou Tesoura</h1>
+        <p id="escolhaTexto">Escolha sua jogada:</p>
+        
+        <div class="opcoes">
+            <button onclick="playGame('pedra')">Pedra</button>
+            <button onclick="playGame('papel')">Papel</button>
+            <button onclick="playGame('tesoura')">Tesoura</button>
+        </div>
+
+        <div class="resultado" id="result"></div>
+
+        <div class="resultado-imagens" id="result-images">
+            <!-- Imagens das escolhas do jogador e do computador -->
+        </div>
+
+        <div class="botao-reiniciar">
+            <button class="reiniciar" id="reiniciarBtn" onclick="restartGame()">Reiniciar Jogo</button>
+        </div>
+    </div>
+
+    <script src="../js/ppt.js"></script>
+</body>
+</html>

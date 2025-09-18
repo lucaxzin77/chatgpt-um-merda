@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="../css/styleF.css">
+</head>
+<body class="body">
+  <a href="../index.html" class="btn-home">🏠 Home</a>
+
+  <div class="container">
+    <h1>Jogo da Forca</h1>
+
+    <div class="palavra" id="palavra">_ _ _ _</div>
+    <div class="info">Tentativas restantes: <span id="tentativas">6</span></div>
+    <div class="letras-erradas" id="letras-erradas">Letras erradas: </div>
+
+    <div class="teclado" id="teclado"></div>
+    <p id="rodada">Rodada: 0</p>
+
+    <div class="mensagem" id="mensagem"></div>
+    <button class="reiniciar" id="btn-reiniciar" onclick="iniciarJogo()">Reiniciar Jogo</button>
+  </div>
+
+  <script src="../js/scriptF.js"></script>
+</body>
+</html>
