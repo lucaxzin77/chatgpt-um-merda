@@ -11,7 +11,6 @@ body {
   color: #3e2f1c;
 }
 
-/* Botão de voltar */
 .homeButton {
   position: absolute;
   top: 20px;
@@ -32,7 +31,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Container estilo pergaminho */
 main {
   background: #f4e5c2;
   border: 8px solid #8b5e3c;
@@ -50,7 +48,6 @@ h1 {
   text-shadow: 1px 1px #e8d6a2;
 }
 
-/* Pergunta */
 #question-container {
   font-size: 1.3rem;
   margin-bottom: 20px;
@@ -58,7 +55,6 @@ h1 {
   color: #4a2c18;
 }
 
-/* Respostas */
 #answers-container {
   display: flex;
   flex-direction: column;
@@ -90,7 +86,6 @@ h1 {
   color: white;
 }
 
-/* Botão próxima */
 #nextButton {
   margin-top: 20px;
   padding: 10px 20px;

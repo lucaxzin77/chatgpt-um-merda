@@ -1,5 +1,5 @@
-let rodada = 0; // Controla o número de rodadas
-let palavrasUsadas = []; // Armazena palavras que já foram usadas
+let rodada = 0; 
+let palavrasUsadas = []; 
 
 const palavras = [
   "JAVASCRIPT", 
@@ -69,7 +69,7 @@ function criarTeclado() {
   for (let letra of letras) {
     const btn = document.createElement("button");
     btn.textContent = letra;
-    btn.onclick = () => tentarLetra(letra); // já maiúscula
+    btn.onclick = () => tentarLetra(letra); 
     teclado.appendChild(btn);
   }
 }
@@ -80,7 +80,7 @@ function removerAcento(letra) {
 
 function tentarLetra(letra) {
   const btn = Array.from(document.querySelectorAll(".teclado button"))
-    .find(b => removerAcento(b.textContent) === letra); // compara sem acento
+    .find(b => removerAcento(b.textContent) === letra); 
 
   if (!btn || btn.disabled) return;
 
@@ -143,7 +143,7 @@ function desativarTeclado() {
 }
 
 function iniciarJogo() {
-  rodada++; // Incrementa o contador de rodadas
+  rodada++; 
   document.getElementById("rodada").textContent = `Rodada: ${rodada}`; // Exibe o número da rodada
 
   palavraEscolhida = escolherPalavra();

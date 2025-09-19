@@ -1,0 +1,139 @@
+body {
+  background: url('https://www.transparenttextures.com/patterns/wood-scratch.png'), linear-gradient(135deg, #d2b79a, #7f7f7f);
+  background-size: cover;
+  background: linear-gradient(135deg, #5a3e2b, #3b2618);
+  font-family: 'Georgia', serif; 
+  color: #3c2f2a; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column; 
+  position: relative;
+  overflow: hidden; 
+}
+
+.homeButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 12px 25px;
+  background-color: #8b5e3c; 
+  color: #fff;
+  border: 2px solid #6a3d2f; 
+  border-radius: 10px;
+  font-family: 'Georgia', serif; 
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none; 
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+.homeButton:hover {
+  background-color: #6a3d2f; 
+  transform: scale(1.1); 
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.5); 
+}
+
+.homeButton:active {
+  transform: scale(0.95); 
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+}
+
+.game-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 8vw); 
+  grid-template-rows: repeat(4, 8vw); 
+  gap: 1.5vw; 
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  background-color: #f9f1e7; 
+  border: 5px solid #7a5a4d; 
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-image: url('https://www.transparenttextures.com/patterns/perforated-paper.png'); /* Textura de papel */
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 8vw;  
+  height: 8vw;  
+  background-color: #7f5f3a; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw; 
+  color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease-in-out;
+  font-family: 'Dancing Script', cursive; 
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden; /* Impede que o texto ultrapasse os limites da carta */
+}
+
+.card.flipped {
+  background-color: #fff;
+  color: #3c2f2a;
+  border: 2px solid #7a5a4d;
+  transform: scale(1.1);
+}
+
+.card.matched {
+  background-color: #90EE90; 
+  color: #3c2f2a;
+  cursor: not-allowed;
+  border: 3px solid #4e8b3d; 
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+}
+
+.card:hover {
+  background-color: #6f4f3d;
+  transform: scale(1.05);
+}
+
+.game-over {
+  font-size: 20px;
+  margin-top: 1px;
+  text-align: center;
+  color: #3c2f2a;
+  font-family: 'Dancing Script', cursive; 
+  text-transform: uppercase;
+  position: relative;
+  z-index: 7;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #7a5a4d;
+  color: #fff;
+  border: 2px solid #5a3d29;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #5a3d29;
+  transform: scale(1.1);
+}

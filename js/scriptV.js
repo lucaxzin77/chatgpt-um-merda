@@ -62,5 +62,4 @@ function restartGame() {
 cells.forEach(cell => cell.addEventListener("click", handleClick));
 restartButton.addEventListener("click", restartGame);
 
-// Mensagem inicial
 message.textContent = `Vez do jogador ${currentPlayer}`;

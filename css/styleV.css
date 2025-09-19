@@ -1,4 +1,3 @@
-/* Fundo rústico */
 body {
   font-family: 'Georgia', serif;
   background: url('https://www.transparenttextures.com/patterns/beige-paper.png');
@@ -12,7 +11,6 @@ body {
   min-height: 100vh;
 }
 
-/* Botão de voltar (fixo no canto superior esquerdo) */
 .homeButton {
   position: absolute;
   top: 20px;
@@ -36,7 +34,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Container estilo pergaminho */
 main {
   text-align: center;
   background: #f4e5c2;
@@ -47,7 +44,6 @@ main {
   max-width: 400px;
 }
 
-/* Título manuscrito */
 h1 {
   margin-bottom: 20px;
   font-family: 'Papyrus', 'Georgia', serif;
@@ -55,7 +51,6 @@ h1 {
   text-shadow: 1px 1px #e8d6a2;
 }
 
-/* Tabuleiro em estilo madeira */
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
@@ -69,7 +64,6 @@ h1 {
   border-radius: 10px;
 }
 
-/* Células estilo papel queimado */
 .cell {
   width: 100px;
   height: 100px;
@@ -94,7 +88,6 @@ h1 {
   pointer-events: none;
 }
 
-/* Mensagem */
 #message {
   margin-top: 15px;
   font-size: 1.2rem;
@@ -103,7 +96,6 @@ h1 {
   font-style: italic;
 }
 
-/* Botão reiniciar */
 #restartButton {
   margin-top: 15px;
   padding: 10px 20px;

@@ -14,13 +14,12 @@ body {
     overflow: hidden;
 }
 
-/* Container estilo pergaminho */
 .container {
     background: #fdf5e6;
     border-radius: 15px;
-    width: 800px; /* Aumentei a largura */
-    max-width: 90%; /* Limita a largura máxima em 90% da tela */
-    padding: 40px 50px; /* Aumentei o padding */
+    width: 800px;
+    max-width: 90%;
+    padding: 40px 50px;
     box-sizing: border-box;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.2);
     border: 4px solid #a67c52;
@@ -28,7 +27,7 @@ body {
     background-size: cover;
     position: relative;
 
-    height: 80vh; /* Aumentei a altura para mais espaço */
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +35,6 @@ body {
     overflow: hidden;
 }
 
-/* Título com cara medieval */
 h1 {
     margin-top: 5px;
     font-size: 50px;
@@ -45,7 +43,6 @@ h1 {
     text-shadow: 1px 1px 0 #fff3d6;
 }
 
-/* Botões de escolha (Pedra, Papel, Tesoura) */
 .opcoes {
     display: flex;
     justify-content: center;
@@ -79,16 +76,14 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Resultado */
 .resultado {
     font-size: 27px;
     font-weight: bold;
-    margin-top: 20px; /* Ajustado para criar mais espaço */
+    margin-top: 20px;
     color: #7a0522;
     text-shadow: 1px 1px 0 #fff3d6;
 }
 
-/* Imagens do resultado */
 .resultado-imagens {
     display: flex;
     justify-content: space-around;
@@ -101,7 +96,6 @@ button:disabled {
     height: 100px;
 }
 
-/* Botão Reiniciar */
 .reiniciar {
     margin-top: 2px;
     width: 180px;
@@ -124,7 +118,6 @@ button:disabled {
     transition: 1s;
 }
 
-/* Botão Home no canto superior esquerdo */
 .btn-home {
     position: absolute;
     top: 20px;
