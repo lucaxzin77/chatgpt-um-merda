@@ -1,0 +1,125 @@
+/* Fundo rústico */
+body {
+  font-family: 'Georgia', serif;
+  background: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  background: linear-gradient(135deg, #5a3e2b, #3b2618);
+  color: #3e2f1c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Botão de voltar (fixo no canto superior esquerdo) */
+.homeButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: 3px solid #4a2c18;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #9c6b3c, #704422);
+  color: #f4e5c2;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.homeButton:hover {
+  background: linear-gradient(145deg, #704422, #9c6b3c);
+  transform: scale(1.05);
+}
+
+/* Container estilo pergaminho */
+main {
+  text-align: center;
+  background: #f4e5c2;
+  border: 8px solid #8b5e3c;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(60,40,20,0.6);
+  max-width: 400px;
+}
+
+/* Título manuscrito */
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Papyrus', 'Georgia', serif;
+  color: #5a3c1a;
+  text-shadow: 1px 1px #e8d6a2;
+}
+
+/* Tabuleiro em estilo madeira */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+  background: #6b4226;
+  padding: 8px;
+  border: 5px solid #4a2c18;
+  border-radius: 10px;
+}
+
+/* Células estilo papel queimado */
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #fdf2d4;
+  border: 2px solid #6b4226;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 6px;
+}
+
+.cell:hover {
+  background: #f5e3b6;
+  transform: scale(1.05);
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+/* Mensagem */
+#message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a2c18;
+  font-style: italic;
+}
+
+/* Botão reiniciar */
+#restartButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 3px solid #4a2c18;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #9c6b3c, #704422);
+  color: #f4e5c2;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+#restartButton:hover {
+  background: linear-gradient(145deg, #704422, #9c6b3c);
+  transform: scale(1.05);
+}
