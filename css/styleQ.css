@@ -1,0 +1,117 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #5a3e2b, #3b2618);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #3e2f1c;
+}
+
+/* Botão de voltar */
+.homeButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: 3px solid #4a2c18;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #9c6b3c, #704422);
+  color: #f4e5c2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.homeButton:hover {
+  background: linear-gradient(145deg, #a56e44, #cc996a);
+  transform: scale(1.05);
+}
+
+/* Container estilo pergaminho */
+main {
+  background: #f4e5c2;
+  border: 8px solid #8b5e3c;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(60,40,20,0.6);
+}
+
+h1 {
+  font-family: 'Papyrus', 'Georgia', serif;
+  color: #5a3c1a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #e8d6a2;
+}
+
+/* Pergunta */
+#question-container {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #4a2c18;
+}
+
+/* Respostas */
+#answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer {
+  padding: 12px;
+  border: 3px solid #4a2c18;
+  border-radius: 8px;
+  background: #fdf2d4;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.answer:hover {
+  background: #f5e3b6;
+  transform: scale(1.02);
+}
+
+.answer.correct {
+  background: #8bc34a;
+  color: white;
+}
+
+.answer.wrong {
+  background: #e57373;
+  color: white;
+}
+
+/* Botão próxima */
+#nextButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 3px solid #4a2c18;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #9c6b3c, #704422);
+  color: #f4e5c2;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#nextButton:hover {
+  background: linear-gradient(145deg, #af7549, #ad7037);
+  transform: scale(1.05);
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a3c1a;
+}
